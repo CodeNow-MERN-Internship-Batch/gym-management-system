@@ -107,101 +107,57 @@ Members get a personalized fitness experience powered by a BMI calculator that r
 ---
 
 ## 📂 Project Structure
+
+```
 prime-fitness-gym/
-
 │
-
 ├── client/                          # React frontend (Vite)
-
 │   ├── public/
-
 │   ├── src/
-
 │   │   ├── components/              # Reusable components
-
 │   │   │   ├── Header.jsx
-
 │   │   │   ├── Footer.jsx
-
 │   │   │   ├── HeroSection.jsx
-
 │   │   │   ├── Sidenav.jsx
-
 │   │   │   └── ...
-
 │   │   ├── pages/                   # Page components
-
 │   │   │   ├── Home.jsx
-
 │   │   │   ├── Login.jsx
-
 │   │   │   ├── Register.jsx
-
 │   │   │   ├── ChangePassword.jsx
-
 │   │   │   ├── AdminDashboard.jsx
-
 │   │   │   ├── Members.jsx
-
 │   │   │   ├── MemberDetail.jsx
-
 │   │   │   ├── UserDashboard.jsx
-
 │   │   │   └── user/
-
 │   │   │       ├── DashboardHome.jsx
-
 │   │   │       ├── Profile.jsx
-
 │   │   │       ├── Membership.jsx
-
 │   │   │       ├── BMI.jsx
-
 │   │   │       ├── Workouts.jsx
-
 │   │   │       └── Diet.jsx
-
 │   │   ├── api/                     # Axios API helpers
-
 │   │   ├── assets/
-
 │   │   ├── protectedNavigation.jsx  # AdminRoute & UserRoute
-
 │   │   └── App.jsx                  # Routes definition
-
 │   ├── index.html
-
 │   ├── vite.config.js
-
 │   └── package.json
-
 │
-
 ├── server/                          # Node.js/Express backend
-
 │   ├── models/                      # Mongoose schemas
-
 │   │   ├── User.js
-
 │   │   ├── Member.js
-
 │   │   ├── Profile.js
-
 │   │   ├── Workout.js
-
 │   │   └── Diet.js
-
 │   ├── seed.js                      # Database seeder
-
 │   ├── server.js                    # Main server file
-
 │   ├── .env                         # Environment variables
-
 │   └── package.json
-
 │
-
 └── README.md
+```
 
 ---
 
@@ -317,15 +273,15 @@ Backend:  http://localhost:5000
 
 | Name | Role | GitHub |
 |------|------|--------|
-| Geethanjali | Full Stack Developer | [@Geetha123-huu](https://github.com/Geetha123-huu) |
-| M Hujur Baig | Full Stack Developer | [@hujur-4](https://github.com/hujur-4) |
-| Konda Subhashini | Full Stack Developer | [@KONDA-SUBHASHINI](https://github.com/KONDA-SUBHASHINI) |
 | Kondepalli Nityasree | Full Stack Developer | [@kondepallinityasree](https://github.com/kondepallinityasree) |
+| Chandu Geethanjali | Full Stack Developer | [@Geetha123-huu](https://github.com/Geetha123-huu) |
+| Konda Subhashini | Full Stack Developer | [@KONDA-SUBHASHINI](https://github.com/KONDA-SUBHASHINI) |
+| Meerja Hujur Baig | Full Stack Developer | [@hujur-4](https://github.com/hujur-4) |
 
 ---
 
 ## 📁 Repository
-🔗 [github.com/hujur-4/gym-management-system](https://github.com/hujur-4/gym-management-system)
+🔗 [github.com/CodeNow-MERN-Internship-Batch/gym-management-system](https://github.com/CodeNow-MERN-Internship-Batch/gym-management-system)
 
 ---
 
