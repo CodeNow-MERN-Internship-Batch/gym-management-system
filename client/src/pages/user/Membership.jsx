@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API_BASE_URL } from "../../api/config";
 
 // Plan mapping from MongoDB value to display
 const planDetails = {
@@ -56,7 +57,7 @@ function Membership() {
   useEffect(() => {
     const fetchMembership = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/membership", {
+        const res = await fetch(`${API_BASE_URL}/api/membership`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

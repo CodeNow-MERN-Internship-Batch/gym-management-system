@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API_BASE_URL } from "../../api/config";
 
 function Diet() {
   const [diet, setDiet] = useState(null);
@@ -11,7 +12,7 @@ function Diet() {
   useEffect(() => {
     const fetchDiet = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/diet", {
+        const res = await fetch(`${API_BASE_URL}/api/diet`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

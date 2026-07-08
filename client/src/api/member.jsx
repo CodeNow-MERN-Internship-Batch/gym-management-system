@@ -1,4 +1,5 @@
-const BASE = "http://localhost:5000/api";
+import { API_BASE_URL } from "./config";
+const BASE = `${API_BASE_URL}/api`;
 
 async function parseJsonOrText(res) {
   const text = await res.text();

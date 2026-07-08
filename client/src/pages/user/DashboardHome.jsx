@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { API_BASE_URL } from "../../api/config";
 
 const planDetails = {
   standard: { name: "Basic" },
@@ -30,10 +31,10 @@ function DashboardHome() {
         const headers = { Authorization: `Bearer ${token}` };
 
         const [profileRes, membershipRes, workoutRes, dietRes] = await Promise.all([
-          fetch("http://localhost:5000/api/profile", { headers }),
-          fetch("http://localhost:5000/api/membership", { headers }),
-          fetch("http://localhost:5000/api/workouts", { headers }),
-          fetch("http://localhost:5000/api/diet", { headers }),
+          fetch(`${API_BASE_URL}/api/profile`, { headers }),
+          fetch(`${API_BASE_URL}/api/membership`, { headers }),
+          fetch(`${API_BASE_URL}/api/workouts`, { headers }),
+          fetch(`${API_BASE_URL}/api/diet`, { headers }),
         ]);
 
         if (profileRes.ok) setProfile(await profileRes.json());

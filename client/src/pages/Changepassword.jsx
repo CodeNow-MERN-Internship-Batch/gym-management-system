@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { API_BASE_URL } from "../api/config";
 
 function Changepassword() {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ function Changepassword() {
     try {
       setSubmitting(true);
 
-      const res = await fetch("http://localhost:5000/api/change-password", {
+      const res = await fetch(`${API_BASE_URL}/api/change-password`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

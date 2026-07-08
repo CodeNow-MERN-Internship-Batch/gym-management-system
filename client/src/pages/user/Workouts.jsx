@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API_BASE_URL } from "../../api/config";
 
 const difficultyColor = {
   Easy: "#28a745",
@@ -18,7 +19,7 @@ function Workouts() {
   useEffect(() => {
     const fetchWorkout = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/workouts", {
+        const res = await fetch(`${API_BASE_URL}/api/workouts`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
