@@ -89,7 +89,7 @@ function BMI() {
     try {
       setSaving(true);
 
-      const res = await fetch("http://localhost:5000/api/profile", {
+      const res = await fetch(`${API_BASE_URL}/api/profile`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
