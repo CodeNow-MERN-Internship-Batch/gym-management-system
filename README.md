@@ -5,6 +5,8 @@ Prime Fitness Gym is a full-stack web application built using the MERN Stack (Mo
 
 Members get a personalized fitness experience powered by a BMI calculator that recommends fitness goals and delivers customized weekly workout plans and daily diet plans. Administrators get full control over member records and membership management.
 
+🔗 **Live Demo:** [prime-gym-management-system.vercel.app](https://prime-gym-management-system.vercel.app/)
+
 ---
 
 ## ✨ What the System Does
